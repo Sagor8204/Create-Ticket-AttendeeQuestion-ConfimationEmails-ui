@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.ticket_table thead tr th {
+  padding: 20px 35px;
+  background-color: rgb(244, 244, 244);
+  position: relative;
+  border-bottom: 1px solid rgb(209 213 219);
+  font-size: 15px;
+}
+
+.ticket_table thead tr th::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: rgb(220, 220, 220);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ticket_table thead tr th:last-child::before {
+  width: 0;
+  height: 0;
+  background-color: none;
+}
+
+.ticket_table tbody tr td {
+  padding: 30px;
+  border-bottom: 1px solid rgb(209 213 219);
+}
+
+.attendeeTable thead tr th {
+  padding: 25px 30px !important;
+}
+
+.attendeeTable tbody tr td {
+  padding: 12px 30px !important;
+}
+
+.confirmation_table thead tr th {
+  padding: 25px 35px !important;
+}
+
+.confirmation_table tbody tr td {
+  padding: 25px 35px !important;
+}
