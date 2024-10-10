@@ -1,4 +1,4 @@
-import { FaPlus } from "react-icons/fa6";
+import { FiPlus } from "react-icons/fi";
 import TopTitle from "@/components/TopTitle";
 import ButtonAndText from "@/components/ButtonAndText";
 import ConfirmationEmailsTable from "@/components/ConfrimationEmailsTable";
@@ -11,7 +11,7 @@ export default function ConfirmationEmails() {
         <ButtonAndText
           subTitle="Create and customize each question form for attendee registration."
           btnText="Create new confirmation email"
-          icon={FaPlus}
+          icon={FiPlus}
         />
 
         <div className="p-4 md:p-6">

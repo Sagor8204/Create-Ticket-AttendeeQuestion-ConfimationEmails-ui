@@ -1,4 +1,4 @@
-import { FaPlus } from "react-icons/fa6";
+import { FiPlus } from "react-icons/fi";
 import TopTitle from "@/components/TopTitle";
 import ButtonAndText from "@/components/ButtonAndText";
 import TicketTable from "@/components/TicketTable";
@@ -12,7 +12,7 @@ export default function Ticket() {
           subTitle="Create and customize each ticket type's pricing, quantities, limits,
             and more here."
           btnText="Create Ticket"
-          icon={FaPlus}
+          icon={FiPlus}
         />
 
         <div className="p-4 md:p-6">
